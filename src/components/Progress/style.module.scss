@@ -1,0 +1,108 @@
+.box {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.addCard {
+  background: transparent;
+  border: 5px solid #00caca;
+  width: 100%;
+  height: 300px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .col {
+    width: calc(100% - 100px);
+    height: 20px;
+    background:#00caca;
+  }
+  .row {
+    width: 20px;
+    height: calc(100% - 100px);
+    background: #00caca;
+    z-index: 10;
+    position: absolute;
+  }
+}
+.card {
+  width: 100%;
+  height: 300px;
+  border: 5px solid #00caca;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  .cardContainer {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    position: relative;
+    &:hover {
+      .iconBar {
+        transition: all 0.6s;
+        opacity: 1;
+      }
+    }
+    .description {
+      width: calc(100% - 40px);
+      // height: calc(100% - 50px);
+      word-wrap: break-word;
+      overflow-y: auto;
+      color: black;
+      font-weight: 500;
+    }
+    .checkContainer {
+      height: 100%;
+      margin-right: 10px;
+      .check {
+        // background-color: rgba(255, 255, 255, 255);
+        height: 30px;
+        width: 30px;
+        border: 1px solid #009393;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 23px;
+        color:	#EA0000;
+        font-weight: 800;
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+  .iconBar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.6s;
+    display: flex;
+    // height: 42px;
+    .mr5 {
+      margin-right: 5px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      padding: 5px 15px;
+      // background: lightblue;
+      border-radius: 10px;
+      &:hover {
+        color :white;
+        background: #EA0000;
+      }
+      &:active {
+        background: lightblue;
+      }
+    }
+  }
+}
