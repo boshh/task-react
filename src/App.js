@@ -36,6 +36,10 @@ const Main = () => {
     setAction(action)
   }
 
+  const gottt=()=>{
+    console.log(123)
+  }
+
   const saveEdit = () => {
     setData("test134455")
   }
