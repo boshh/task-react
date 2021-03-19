@@ -37,7 +37,7 @@ const Main = () => {
   }
 
   const gottt=()=>{
-    console.log(12333334444444)
+    console.log(1233333)
   }
 
   const saveEdit = () => {
