@@ -23,7 +23,7 @@ const App = () => {
   return (
     <WithTaskProvider>
       <Main></Main>
-    </WithTaskProvider>åååå
+    </WithTaskProvider>
   );
 }
 
@@ -42,6 +42,7 @@ const Main = () => {
 
   const saveEdit = () => {
     setData("test1344551234243")
+    setData("test134455t8t1111")
   }
   const content = () => {
     switch (action) {
