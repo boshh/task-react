@@ -43,9 +43,6 @@ const Main = () => {
   const saveEdit = () => {
     setData("test134455t8t1111")
   }
-  const saveEdit1 = () => {
-    setData("test134455t8t1111")
-  }
   const content = () => {
     switch (action) {
       case 1:
