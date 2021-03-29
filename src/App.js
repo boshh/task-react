@@ -23,7 +23,7 @@ const App = () => {
   return (
     <WithTaskProvider>
       <Main></Main>
-    </WithTaskProvider>åååå
+    </WithTaskProvider>
   );
 }
 
