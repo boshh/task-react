@@ -41,7 +41,11 @@ const Main = () => {
   }
 
   const saveEdit = () => {
+<<<<<<< t8t
     setData("test1344551234243")
+=======
+    setData("test134455123424555555")
+>>>>>>> test111
   }
   const content = () => {
     switch (action) {
